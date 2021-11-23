@@ -10,14 +10,43 @@
   width: 47%;
 }
 
-.header__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 .menu-btn {
   display: none;
+}
+
+.hero {
+
+  &__title {
+    display: block;
+  }
+
+  &__arrow {
+    display: block;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    vertical-align: middle;
+  
+    & > li {
+      font-size: .8em;
+      display: inline-block;
+      font-weight: bold;
+      color: $cWhite;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      padding-left: 20px;
+      font-family: "heisei-kaku-gothic-std";
+  
+      &:hover {
+        color: $cBlue;
+      }
+    }
+  }
 }
 
 .about {
@@ -42,7 +71,7 @@
   height: 150px;
 }
 
-.yt-article {  
+.yt-article {
   &__container {
     max-width: 1000px;
     margin: 0 auto;
@@ -61,7 +90,7 @@
     max-width: 500px;
     margin-top: 50px;
     display: block;
-    
+
     & > img {
       border-radius: 10px;
       opacity: 1;
@@ -75,7 +104,6 @@
 }
 
 .et-article {
-
   &__container {
     max-width: 1000px;
     margin: 0 auto;
@@ -97,7 +125,7 @@
     max-height: 350px;
     overflow: hidden;
     border-radius: 10px;
-    
+
     & > img {
       object-fit: cover;
       transform: translateY(-100px);
@@ -117,7 +145,6 @@
 }
 
 .motivation {
-
   &__container {
     flex-direction: row;
   }
@@ -132,7 +159,6 @@
 }
 
 .profile {
-
   &__container {
     width: 60%;
   }

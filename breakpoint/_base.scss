@@ -2,11 +2,6 @@ body {
   font-family: "heisei-kaku-gothic-std", sans-serif, "Eraser";
 }
 
-@font-face {
-  font-family: "Eraser";
-  src: url(../font/EraserDust-p70d.ttf) format("truetype");
-}
-
 ul {
   padding: 0;
 }
@@ -90,24 +85,6 @@ a {
 .header {
   width: 100%;
   position: absolute;
-
-  &__nav {
-    width: 100%;
-    margin-top: 10px;
-    display: none;
-
-    & > li {
-      padding: 10px 30px;
-      @extend .ff-er;
-      font-size: 1.2em;
-      transition: all 0.3s ease;
-      cursor: pointer;
-
-      &:hover {
-        color: $cPink;
-      }
-    }
-  }
 }
 
 .cover {
@@ -115,7 +92,7 @@ a {
   visibility: hidden;
   width: 100%;
   height: 700px;
-  background-color: rgba($color: $cBGColor, $alpha: 1.0);
+  background-color: rgba($color: $cBlack, $alpha: 1);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
@@ -144,19 +121,19 @@ a {
     @extend .content-width;
     
     & > nav {
-      margin-top: 100px;
+      margin-top: 150px;
       text-align: center;
       
       & > li {
-        padding-bottom: 0px;
-        @extend .fs-lr;
-        @extend .ff-er;
+        padding: 10px 0;
+        @extend .fs-md;
         @extend .mb-sm;
         color: $cWhite;
         cursor: pointer;
         transition: all 0.3s ease;
         display: block;
-        border: solid 1px $cWhite;
+        margin-bottom: 20px;
+        font-weight: bold;
         
         &:hover {
           background-color: $cWhite;
@@ -197,9 +174,40 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
+  background-position: center center;
+  z-index: 1;
   @extend .mb-lr;
 
+  &__arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    & > div {
+      color: $cWhite;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+      animation: arrow-animation 2s ease infinite;
+    }
+    
+    & > img {
+      animation: arrow-animation 2s ease infinite;
+      width: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+  
   &::after{
     content: "";
     position: absolute;
@@ -220,71 +228,27 @@ a {
   &__title {
     position: absolute;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    & > div {
-      line-height: 0;
-      & > span {
-        @extend .fs-lr;
-        @extend .ff-er;
-        color: $cWhite;
-        text-shadow: 0 0 10px $cBlack;
-
-        &:nth-child(1) {
-          display: inline-block;
-          transform: rotate(-30deg);
-        }
-
-        &:nth-child(2) {
-          padding: 0 50px;
-        }
-        &:nth-child(3) {
-          display: inline-block;
-          transform: rotate(30deg);
-        }
-      }
-    }
+    top: 30px;
+    left: 0px;
 
     & > h1 {
-      @extend .ff-er;
-      @extend .fs-lr;
+      color: $cWhite;
+      @extend .fs-md;
       letter-spacing: 6px;
-      text-shadow: 0 0 10px $cBlack;
-
-      & > span {
-        color: $cBlue;
-      }
-    }
-
-    & > h2 {
-      @extend .ff-er;
-      text-shadow: 0 0 10px $cBlack;
+      margin-bottom: 0;
     }
   }
 
-  &__arrow {
+  &__mainTitle {
     position: absolute;
-    bottom: 40px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    & > span {
-      @extend .ff-er;
-      padding-bottom: 10px;
-      font-size: 20px;
-      text-shadow: 0 0 10px $cBlack;
-    }
-
-    & > img {
-      width: 60px;
-      transform: rotate(180deg);
-    }
+    transform: translate(-50%,-50%);
+    color: $cWhite;
+    font-size: 2em;
+    font-weight: bold;
+    @extend .ff-er;
+    text-shadow: 0px 0px 5px $cBlack;
   }
 }
 
@@ -336,12 +300,16 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    &::after {
+      content: "";
+      width: 380px;
+      display: block;
+    }
   }
 
   &__content {
-    width: 100%;
-    max-width: 450px;
-    min-width: 300px;
+    width: 400px;
     border-radius: 10px;
     overflow: hidden;
     @extend .mb-md;
@@ -716,6 +684,8 @@ a {
 
 .motivation {
   width: 100%;
+  padding: 30px 0;
+  background-color: $cNGmotivation;
 
   &__container {
     display: flex;
@@ -789,7 +759,7 @@ a {
   }
   
   &__dl {
-    border: solid 1px $cWhite;
+    border: double 5px $cWhite;
     margin: 0 auto;
     width: 100%;
     cursor: default;
