@@ -17,6 +17,20 @@ cover.addEventListener('click', function() {
   menuBtn.classList.toggle('menu-open');
 })
 
+// 以下、ローダー
+
+$(function(){
+	var loader = $('.loader-wrap');
+
+	$(window).on('load',function(){
+		loader.fadeOut();
+	});
+
+	setTimeout(function(){
+		loader.fadeOut();
+	},3000);
+});
+
 // 以下、ページスクロールイベント
 
   $('.worksBtn').click(function() {
