@@ -3,287 +3,378 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, i
-    nitial-scale=1.0" />
-    <meta name=”description” content=”TanimotoEisukeの制作したポートフォリオサイトです。デザインカンプからコーディングしました。トップを動画にするなど、少し変更している箇所があります。”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eisukeのポートフォリオサイトです。">
     <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/vendors/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ybb3big.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <title>PORT DESIGN</title>
+    <link rel="icon" href="images/favicon.ico">
+    <title>Portfolio Site TOP</title>
   </head>
 
   <body>
-    <div class="top-scroll fas fa-chevron-circle-up fa-2x"></div>
+    <div class="loader-wrap">
+      <div class="loader">Loading...</div>
+    </div>
 
-    <!-- 以下、ヘッダー -->
+    <div class="top">TOP</div>
 
     <header class="header">
-      <div class="nav-cover">
-        <nav class="nav-list">
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">WORKS</a></li>
-          <li><a href="#">COMPANY</a></li>
-          <li><a href="https://ei-pf-webcom-recruit.netlify.app">RECRUIT</a></li>
-          <li><a href="https://ei-pf-webcom-contact.netlify.app">CONTACT</a></li>
-        </nav>
-      </div>
-
-      <div class="header__inner">
-        <div class="header__logo"><a href="#">PORT DESIGN</a></div>
-        <nav class="header__nav">
-          <li><a href="https://ei-pf-webcom-news.netlify.app" class="link">NEWS</a></li>
-          <li><a href="https://ei-pf-webcom-service.netlify.app" class="link">SERVICE</a></li>
-          <li><a href="https://ei-pf-webcom-works.netlify.app" class="link">WORKS</a></li>
-          <li><a href="https://ei-pf-webcom-company.netlify.app" class="link">COMPANY</a></li>
-          <li><a href="https://ei-pf-webcom-recruit.netlify.app" class="link">RECRUIT</a></li>
-          <li><a href="https://ei-pf-webcom-contact.netlify.app" class="link">CONTACT</a></li>
-        </nav>
-      </div>
-      <div class="menu-btn"><span></span><span></span><span></span></div>
-    </header>
-
-    <!-- 以下、ヒーロー部分 -->
-
-    <div class="hero">
-      <div class="hero__video-container">
-        <video
-          src="images/hero/Banner - 88452.mp4"
-          autoplay
-          muted
-          loop
-          playsinline
-        ></video>
-        <div class="hero__title">
-          <h1>WEB DESIGN SPECIALIST</h1>
-          <h3>お客様の夢を叶えるWEBサイトを制作</h3>
-          <a href="https://ei-pf-webcom-contact.netlify.app"><button class="hero__btn">CONTACT</button></a>
+      <div class="menu-btn"></div>
+      <div class="cover">
+        <div class="cover__inner">
+          <nav>
+            <li class="worksBtn">WORKS</li>
+            <li class="skillBtn">SKILLS</li>
+            <li class="aboutBtn">ABOUT</li>
+            <li class="profileBtn">PROFILE</li>
+          </nav>
+          <div class="cover__icon">
+            <a href="mailto:esperanto1898@gmail.com?"><img src="images/mail.png" alt="mail"></a>
+            <a href="https://www.resume.id/eisuke_tani"><img src="images/resume.png" alt="resume"></a>
+          </div>
         </div>
-        <div class="hero__scroll">
-          <p>SCROLL</p>
-          <div class="hero__scroll-arrow"></div>
+      </div>
+      
+    </header>
+    
+    <div class="hero">
+      <div class="hero__arrow">
+        <div>SCROLL</div>
+        <img src="images/arrow-icon.png" alt="arrow-icon">
+      </div>
+      <div class="hero__inner">
+        <div class="hero__title">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <nav class="hero__nav">
+          <li class="worksBtn">WORKS</li>
+          <li class="skillBtn">SKILL</li>
+          <li class="aboutBtn">ABOUT</li>
+          <li class="profileBtn">PROFILE</li>
+        </nav>
+        <div class="hero__mainTitle">
+          Strike while the iron is hot.
         </div>
       </div>
     </div>
 
-    <!-- 以下、ニュースセクション -->
-
-    <section class="news">
-      <div class="news__inner">
-        <div class="news__container">
-          <div class="section-title news__title">
-            <h2>NEWS</h2>
-            <p>お知らせ</p>
-          </div>
-          <div class="news__list">
-            <ul>
-              <div class="news__tag">
-                <li>2030.02.01</li>
-                <li class="news__icon">お知らせ</li>
-              </div>
-              <li class="news__text">
-                <a href="https://ei-pf-webcom-news-article.netlify.app">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
-              </li>
-            </ul>
-            <ul>
-              <div class="news__tag">
-                <li>2030.01.25</li>
-                 <li class="news__icon">制作実績</li>
-              </div>
-              <li class="news__text">Smoothiesta様のWebサイトを制作いたしました</li>
-            </ul>
-            <ul>
-              <div class="news__tag">
-                <li>2030.01.20</li>
-                <li class="news__icon">採用</li>
-              </div>
-              <li class="news__text">Webデザイナーを１名募集中です！</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 以下、サービスセクション -->
-
-    <section class="service">
-      <div class="service__inner">
-        <div class="section-title">
-          <h2>SERVICE</h2>
-          <p>事業内容</p>
-        </div>
-
-        <div class="service__container">
-          <div class="service__content">
-            <div class="service__img">
-              <img src="images/service01.jpg" alt="service01" />
-            </div>
-            <h4>Webサイト制作</h4>
-            <p>
-              新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
-            </p>
-          </div>
-          <div class="service__content">
-            <div class="service__img">
-              <img src="images/service02.jpg" alt="service02" />
-            </div>
-            <h4>Webサイト運用</h4>
-            <p>
-              新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
-            </p>
-          </div>
-          <div class="service__content">
-            <div class="service__img">
-              <img src="images/service03.jpg" alt="service03" />
-            </div>
-            <h4>アプリ開発</h4>
-            <p>
-              新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
-            </p>
-          </div>
-        </div>
-        <div class="service__btn">
-          <a href="https://ei-pf-webcom-service.netlify.app"><button class="btn-anime">MORE</button></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 以下、制作実績セクション -->
-
+    <main class="triggered">
     <section class="works">
+      <div class="works__title">
+        <h2 class="section-title">WORKS</h2>
+        <span>今までの制作物をまとめたものです</span>
+      </div>
       <div class="works__inner">
-        <div class="works__container">
-          <div class="works__container-swiper">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="images/works/citylab.jpg" alt="citylab" />
+        <div class="works__contents">
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">WEB Site</span>
+              <a href="https://www.resume.id/works/70bfe2da2527d8e8"><img class="works__img" src="images/portfolio-salon.png" alt="portfolio-salon" /></a>
+            </div>
+            <p>【課題】美容室TOPページ(デザイン＆コーディング)</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">WEB Site</span>
+              <a href="https://www.resume.id/works/80a9c4b7535d2b7b"><img class="works__img" src="images/portfolio-marin.png" alt="portfolio-marin" /></a>
+            </div>
+            <p>【課題】架空水族館TOPページ(デザインカンプ)</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">WEB Site</span>
+              <a href="https://www.resume.id/works/e44e2a3069bd77bb"><img class="works__img" src="images/portfolio-webcompany.png" alt="portfolio-webcompany" /></a>
+            </div>
+            <p>【課題】中規模コーポレートWEBサイト制作(コーディング)</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">WEB Site</span>
+              <a href="https://www.resume.id/works/662a3adb2025d2ea"><img class="works__img" src="images/portfolio-trip.png" alt="portfolio-trip" /></a>
+            </div>
+            <p>【学習】旅行サイトTOPページ(コーディング)</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">WEB Site</span>
+              <a href="https://www.resume.id/works/cb66c5416bfe9d06"><img class="works__img" src="images/portfolio-media.png" alt="portfolio-media" /></a>
+            </div>
+            <p>【学習】デザインカンプコーディング(コーディング)</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">WEB Site</span>
+              <a href="https://www.resume.id/works/778da6a45d76464e"><img class="works__img" src="images/portfolio-LP.png" alt="portfolio-LP" /></a>
+            </div>
+            <p>【制作】自己ポートフォリオサイト(デザイン＆コーディング)</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">Youtube</span>
+              <a href="https://www.resume.id/works/6cef182c90731355"><img class="works__img" src="images/portfolio-youtube.png" alt="portfolio-youtube" /></a>
+            </div>
+            <p>【動画】YouTube動画編集(企画/編集) [Pass:8888]</p>
+          </article>
+          <article class="works__content">
+            <div class="works__content__image">
+              <span class="works-title">Youtube</span>
+              <a href="https://www.resume.id/works/c6a26d669292c682"><img class="works__img" src="images/portfolio-youtube-samune.png" alt="portfolio-youtube-samune" /></a>
+            </div>
+            <p>【他】YouTubeサムネイル(デザイン) [Pass:8888]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill">
+      <div class="skill__title">
+        <h2 class="section-title">SKILL</h2>
+        <span>現在の私のスキルです</span>
+      </div>
+      <div class="skill__wrapper">
+        <div class="skill__inner">
+
+          <div class="skill__container">
+            <div class="skill__icon">
+              <div>
+                <img src="images/html.png" alt="html" />
+              </div>
+            </div>
+              <ul class="skill__type">
+                <li>HTML/CSS</li>
+                <li>Sass</li>
+                <li>　</li>
+              </ul>
+              <span class="skill__text">
+                ProgateとUdemyを受講し、ある程度のWEBサイトは制作可能です。今後はより経験を積んで見やすく簡潔なコーディングができるよう励んでいきたいと思います。
+              </span>
+            </div>
+          <div class="skill__container">
+            <div class="skill__icon">
+              <div>
+                <img src="images/program.png" alt="program" />
+              </div>
+            </div>
+              <ul class="skill__type">
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>　</li>
+              </ul>
+              <span class="skill__text">
+                Udemyの授業を受講し、JavaScriptの仕組みについて勉強しました。奥が深い分野で大変でしたが、動的なWEBサイト構築のためにも今後も勉強を続けたいと思います。
+              </span>
+            </div>
+          <div class="skill__container">
+            <div class="skill__icon">
+              <div>
+                <img src="images/tool.png" alt="tool" />
+              </div>
+            </div>
+              <ul class="skill__type">
+                <li>Photoshop</li>
+                <li>Premiere Pro</li>
+                <li>XD</li>
+              </ul>
+              <span class="skill__text">
+                基本的な操作は問題ありません。PhotoShopは主に動画のサムネイルの作成で使用していました。動画編集に関しては、視る人の分かりやすさを考えて制作することを心がけています。
+              </span>
+            </div>          
+          </div>
+            <span>※WordPressは勉強中です。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__title">
+        <h2 class="section-title">ABOUT</h2>
+        <span>私についてです</span>
+      </div>
+      <div class="about__profile">
+        <div class="about__profile__inner">
+          <div class="about__profile__img">
+            <img src="images/about-image.jpg" alt="about-image" />
+          </div>
+          <div class="about__profile__text">
+            <h3>Tanimoto Eisuke</h3>
+            <span>1990年6月生まれ。石川県出身。
+              <br>座右の銘は奇貨居くべし。
+              趣味で始めた動画編集を通じて、人に伝わりやすいデザインに興味をもつようになる。
+              そこからWEBサイト制作に興味をもち、現在デザインとコーディングを勉強中。主にProgate、Udemy、書籍で<b>独学</b>3ヶ月目。
+              学生時代から現在に至るまで、さまざまな業種に従事した経験を活かし、クライアントの要望に応えられるWEB制作者を目指しています。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="apeal">
+        <div class="apeal__inner">
+          <div class="apeal__title">APEAL POINT</div>
+          <div class="apeal__icons">
+            <div class="yt">
+              <div class="icon-circle">
+                <img src="images/YouTube.png" alt="Youtube" />
+              </div>
+              <span>動画編集</span>
+            </div>
+            <div class="icon-x">
+              <span>×</span>
+            </div>
+            <div class="et">
+              <div class="icon-circle">
+                <img src="images/enter.png" alt="enter" />
+              </div>
+              <span>クリエイティブ</span>
+            </div>
+          </div>
+
+          <div class="yt-articl">
+            <div class="yt-article__container">
+              <div class="yt-article__content fadeIn">
+                <div class="yt-article__title">
+                  <img src="images/YouTube.png" alt="Youtube-icon">
+                  <h2>動画の編集から配信まで</h2>
                 </div>
-                <div class="swiper-slide">
-                  <img src="images/works/lamina.jpg" alt="lamina" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="images/works/smoothiesta.jpg" alt="smoothiesta" />
+                <div class="yt-article__text">
+                  在学中から人を楽しませたいという思いから趣味で動画を100本以上投稿していました。配信機材の構成からYouTubeチャンネルの
+                  運営・分析まで行ってたのでYoutube動画の制作について一通りのことは完結できます。<br>
+                  動画の構成や画面の見やすさには常に注意を払っており、
+                  色の使い方やフォントの使い方など、視聴者が飽きにくい
+                  動画を制作するよう心がけていました。ソフトの使い方は独学で、編集の仕方は勉強しながら常に試行錯誤していました。
                 </div>
               </div>
+              <div class="yt-article__img">
+                <img src="images/direction.jpg" alt="direction">
+              </div>
+           </div>
+          </div>
 
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+          <div class="et-articl">
+            <div class="et-article__container">
+              <div class="et-article__img">
+                <img src="images/silver.png" alt="silver-img">
+              </div>
+              <div class="et-article__content fadeIn">
+                <div class="et-article__title">
+                  <img src="images/enter.png" alt="enter">
+                  <h2>コツコツと良いものを</h2>
+                </div>
+                <div class="et-article__text">
+                  何かをつくることが昔から好きです。動画編集においても、”良くなる”、”面白くなる”とわかれば、時間を忘れて”どうすれば”その演出が実現できるかを考えて作り込むタイプでした。デザインやコーディング作業においても、「より良く」クライアントのブランディング価値の向上に繋げられるよう、コツコツと前向きに取り組んでいきたいと考えています。画像は10万人登録時にもらえるYouTubeの銀の盾です。
+                </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="motivation">
+          <div class="apeal__title">MOTIVATION</div>
+          <div class="motivation__container">
+            <div class="motivation__content">
+              <h3>どんなWEBデザイナーになりたいか</h3>
+              <span>
+                <h4>企業の商品やサービスの魅力を伝えられるようになりたい</h4>
+                WEBサイトやUIは、そのプロダクトやサービスをユーザーに伝える大事な要素だと考えます。今までの業務の中でも、どうやれば"伝わる"が効果的になるのかがわからず、結局うまくいかないことが多々ありました。その解決策の一つが「デザイン」という考え方であることを知り、その論理性と汎用性にとても興味を抱いたのを覚えています。今はまだ始めたばかりで引き出しも少ないですが、将来的にはデザインとコーディング力(＋動画編集もできる)を兼ね備えたWEBにおいてのオールラウンダーな人材になりたいと考えています。
+                
+              </span>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <div class="works__content">
-            <div class="section-title">
-              <h2>WORKS</h2>
-              <p>制作実績</p>
-            </div>
-            <div class="works__text">
-              様々なジャンルのWebサイト制作が可能です。
-              ご購入やお申込み数の増加などを実現します！
-            </div>
-            <div class="works__btn">
-              <a href="https://ei-pf-webcom-works.netlify.app"><button class="btn-anime">MORE</button></a>
+            <div class="motivation__content">
+              <h3>これから学びたいこと</h3>
+              <span>
+                <h4>UI/UXとJavascript</h4>
+                WEBやアプリケーションサービスが増加する現代では、画面上のユーザー体験の価値が重要視され、その体験を最大化できることは今後もデジタル社会がつづく限り常に求められる能力だと考えます。そういった概念的なものを言語化し、実際に落とし込む作業というのは難しいですが、それ故にやりがいがあると考えます。
+                また、動的なWEBページの勉強でJavascriptに出会いましたが、初めてプログラミングという概念に触れ、応用方法やオブジェクト指向概念の一端がわかり非常に興味深かったです。ぜひ習得していきたい分野です。ある程度基礎が固まれば、Vue.jsにも挑戦してみたいと考えています。
+              </span>
             </div>
           </div>
-        </div>
-        <div class="works__wrapper-pc"></div>
-      </div>
-      <div class="works__wrapper"></div>
-    </section>
-
-    <!-- 以下、COMPANYセクション -->
-
-    <section class="company">
-      <div class="company__inner">
-        <div class="company__wrapper">
-          <img class="company__wrapper-face" src="images/bg-face.png" alt="bg-face" />
-        </div>
-        <div class="company__container">
-          <div class="section-title">
-            <h2>COMPANY</h2>
-            <p>私たちについて</p>
           </div>
-          <h2 class="company__sub">サイトのゴール =</h2>
-          <h2 class="company__sub">夢を叶えること</h2>
-          <div class="company__text">
-            お客様の夢を叶えること。<br />
-            それがWebサイトのゴールであり、私たちが目指すことです。<br />
-            だからこそちゃんと成果を出すサイトを全力でお作りします。<br />
-            お客様の笑顔を見たい。<br />
-            夢を実現する手助けをさせてください。
-          </div>
-          <a href="https://ei-pf-webcom-company.netlify.app"><button class="btn-anime">MORE</button></a>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- 以下、採用情報セクション -->
-
-    <section class="recruit">
-      <div class="recruit__base-img"></div>
-      <div class="recruit__inner">
-        <div class="recruit__container">
-          <div class="recruit__content">
-            <div class="section-title">
-              <h2>RECRUIT</h2>
-              <p>採用情報</p>
+        <section class="history">
+            <div class="history__title">
+              <h2 class="section-title">HISTORY</h2>
+              <span>これまでの経歴を簡単にまとめたものです</span>
             </div>
-            <p>私たちと一緒に働きませんか？</p>
-            <a href="https://ei-pf-webcom-recruit.netlify.app"><button class="btn-anime">MORE</button></a>
+            <div class="history__wrapper">
+              <div class="history__inner">
+                <dl class="history__dl">
+                  <dt>2020</dt>
+                  <dd>映画配給会社の新規事情としてタレントを起用したYouTubeチャンネルの運営に従事。ディレクターとして企画運営から動画編集・収録・機材選定・サムネイル作成・チャンネル運営・グッズ制作まで幅広く行い、登録者数10万人を達成。特にゲーム系動画については自信あり。</dd>
+                  <dt>2017</dt>
+                  <dd>IT・エンタメ(ゲーム)企業にて、女性声優アイドルユニットのプロデュースに関わる。アイドルキャラクターのコンセプト原案や配信番組の企画・配信ディレクターとして従事。</dd>
+                  <dt>2016</dt>
+                  <dd>映像機器メーカーでBtoB営業職に従事。主にSI向けに自社製品を営業。
+                    映像に関する知識とトラブル時の切り分けの大切さを身につける。パワポでの資料作成能力を褒められ、見やすい画面を意識し始める。</dd>
+                  <dt>2015</dt>
+                  <dd>大学卒業後、東京で同窓会コミュニティビジネスを軸としたベンチャー企業に入社。プランナーとして20件ほどの案件に携わる。コミュニティ用のネイティブアプリ開発を間近でみてから、WEBへの関心を高める。</dd>
+                  <dt>2010</dt>
+                  <dd>事情により高校を中退するが、めげずに通信制で高認資格を取得し、
+                    1年間の浪人生活を経て国立大学に入学。法律を学ぶ。</dd>
+                  <dt>1990</dt>
+                  <dd>石川県出身。</dd>
+                </dl>
+              </div>
+            </div>
+        </section>
+
+        <section class="profile">
+          <div class="profile__title">
+            <h2 class="section-title">PROFILE</h2>
+            <span>私の趣味や好きなものです</span>
           </div>
-        </div>
-        <div class="recruit__img">
-          <img src="images/recruit.jpg" alt="recruit" />
-        </div>
-      </div>
-    </section>
-
-    <!-- 以下、お問い合わせセクション -->
-
-    <section class="contact">
-      <div class="contact__container">
-        <div class="contact__content">
-          <div class="section-title">
-            <h2>CONTACT</h2>
-            <p>お問い合わせ</p>
+          <div class="profile__inner">
+            <div class="profile__container">
+              <div class="profile__content fadeIn">
+                <div>
+                  <img class="icon-image" src="images/movie.png" alt="movie">
+                </div>
+                <span>硬派な海外ドラマや洋画が好きです。</span>
+              </div>
+              <div class="profile__content fadeIn">
+                <div>
+                  <img class="icon-image" src="images/game.png" alt="game">
+                </div>
+                <span>コンシューマ向けゲームを結構やります。雑食ですが、シミュレーション系が特に好きです。</span>
+              </div>
+              <div class="profile__content fadeIn">
+                <div>
+                  <img class="icon-image" src="images/spa.png" alt="spa">
+                </div>
+                <span>最近サウナにはまり週1ペース。お気に入りが3件ほどあります。</span>
+              </div>
+              <div class="profile__content fadeIn">
+                <div>
+                  <img class="icon-image" src="images/write.png" alt="write">
+                </div>
+                <span>趣味でWEB小説も書かきます。</span>
+              </div>
+              <div class="profile__content fadeIn">
+                <div>
+                  <img class="icon-image" src="images/bike.png" alt="bike">
+                </div>
+                <span>フードデリバリーも合間にやって気分転換と運動不足解消に励んでいます。先日UEで100件に到達。</span>
+              </div>
+              <div class="profile__content fadeIn">
+                <div>
+                  <img class="icon-image" src="images/sake.png" alt="sake">
+                </div>
+                <span>ウィスキーやジンなどの蒸留酒が好きです。</span>
+              </div>
+            </div>
           </div>
-          <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
-          <a href="https://ei-pf-webcom-contact.netlify.app"><button class="btn-anime">MORE</button></a>
-        </div>
-      </div>
-    </section>
+        </section>
+      </main>
 
-    <!-- 以下、フッター -->
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <nav class="footer__nav">
-          <li><a href="https://ei-pf-webcom-news.netlify.app">NEWS</a></li>
-          <li><a href="https://ei-pf-webcom-service.netlify.app">SERVICE</a></li>
-          <li><a href="https://ei-pf-webcom-works.netlify.app">WORKS</a></li>
-          <li><a href="https://ei-pf-webcom-company.netlify.app">COMPANY</a></li>
-          <li><a href="https://ei-pf-webcom-recruit.netlify.app">RECRUIT</a></li>
-          <li><a href="https://ei-pf-webcom-contact.netlify.app">CONTACT</a></li>
-        </nav>
-        <span>&copy TANI DESIGN</span>
-      </div>
-    </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="scripts/swiper.js"></script>
-    <script src="scripts/main.js"></script>
+        <footer class="footer" >
+          <div class="footer__inner">
+            <div>
+              <a href="mailto:esperanto1898@gmail.com?"><img src="images/mail.png" alt="mail"></a>
+              <a href="https://www.resume.id/eisuke_tani"><img src="images/resume.png" alt="resume"></a>
+            </div>
+            <span>&copy Tanimoto Eisuke</span>
+          </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
   </body>
 </html>
