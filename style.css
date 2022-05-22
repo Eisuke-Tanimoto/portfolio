@@ -392,6 +392,7 @@ a {
 
 .hero__mainTitle {
   position: absolute;
+  display: inline-block;
   width: 100%;
   text-align: center;
   top: 50%;
@@ -399,9 +400,10 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  font-size: 4em;
+  font-size: 3.4em;
   font-weight: bold;
   text-shadow: 0px 0px 5px #232323;
+  pointer-events: none;
 }
 
 .section-title {
